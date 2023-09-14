@@ -1,5 +1,5 @@
 *{
-    border: 0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -13,10 +13,9 @@ body{
     margin: 0 auto;
 }
 
-/* HEADER */ /*bug*/
+/* HEADER */ 
 header{
     height: 50px;
-    background-color: orange; /*debug test*/
 }
 header h1{
     line-height: 50px;
@@ -28,9 +27,10 @@ header h1{
 /* PARAGRAFO */
 .paragrafo p{
     text-align: center;
+    margin: 1rem 0 1rem;
 }
 
-/* CARDS */ /*clearfix*/ /*bug*/
+/* CARDS */ /*clearfix*/ 
 .cards::after{
     content: "";
     display: table;
@@ -38,7 +38,25 @@ header h1{
 }
 
 .cards .coloms{
+    padding: 1rem 1rem;
     width: calc(100% / 3);
-    background-color: aqua;
     float: left;
+}
+
+/* PROFILO*//* clearfix */
+.profilo{
+    background-color: rgba(79, 42, 42, 0.87);
+}
+.profilo::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.profilo img{
+    float:left;
+    max-width: 20%;
+}
+/*dimensione carattere più addatability*/
+.info{  /*da vedere bene come fare a centrare il testo alla foto*/
+    padding: 1%;
 }
