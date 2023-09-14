@@ -5,5 +5,29 @@
 }
 body{
     font-family: 'Comic Neue', cursive;
-
 }
+/* CONTAINER */
+.container{
+    height: 1000px;  /*debug test*/
+    width: 80%;
+    background-color: rgba(168, 185, 180, 0.555);
+    margin: 0 auto;
+}
+
+/* HEADER */
+header{
+    height: 50px;
+    background-color: orange; /*debug test*/
+}
+header h1{
+    line-height: 50px;
+    text-align: center;
+    color: purple;
+    font-weight: 800;
+}
+
+/* PARAGRAFO */
+.paragrafo p{
+    text-align: center;
+}
+
