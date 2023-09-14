@@ -6,15 +6,14 @@
 body{
     font-family: 'Comic Neue', cursive;
 }
-/* CONTAINER */
+/* CONTAINER */ 
 .container{
-    height: 1000px;  /*debug test*/
     width: 80%;
     background-color: rgba(168, 185, 180, 0.555);
     margin: 0 auto;
 }
 
-/* HEADER */
+/* HEADER */ /*bug*/
 header{
     height: 50px;
     background-color: orange; /*debug test*/
@@ -31,3 +30,15 @@ header h1{
     text-align: center;
 }
 
+/* CARDS */ /*clearfix*/ /*bug*/
+.cards::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.cards .coloms{
+    width: calc(100% / 3);
+    background-color: aqua;
+    float: left;
+}
